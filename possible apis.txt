@@ -1,0 +1,16 @@
+Parking Lot Issue, help find spot easy, and be able to find car in parking lot at mall. 
+
+ - google maps
+ - looks for cars with ignition on, and what isle they are in
+ - looks for empty spots
+ - looks for your car, directions.
+ - PlaceFinder API
+ - Local API
+ - Fire Eagle Developer API
+ - 
+
+
+
+
+Stoplight issue, respond based on amount of people
+
