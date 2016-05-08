@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Bootstrap Example</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+  	<script>
+  	var myCenter=new google.maps.LatLng(37.535253,-120.863445);
+	function initialize() {
+  		var mapProp = {
+    		center:new google.maps.LatLng(37.535253,-120.863445),
+    		zoom:16,
+    		mapTypeId:google.maps.MapTypeId.ROADMAP
+  		};
+  		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  		var marker=new google.maps.Marker({
+  			position:myCenter,
+  		});
+  		marker.setMap(map);
+  		var infowindow = new google.maps.InfoWindow({
+  			content:"1283 Paseo Belleza, Turlock, CA 95382, United States"
+  		});
+
+  		infowindow.open(map,marker);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	-webkit-text-size-adjust: none;
+}
+#wholebar {
+	width:100%;
+	height:100%;
+}
+#navbar {
+	width:101%;
+	height:100%;
+	margin-left:-1%;
+	margin-bottom:0%;
+	background-color:black;
+}
+#list {
+	margin-left:75%;
+}
+#contact_card {
+	position:relative;
+	margin-top:-12.4%;
+	margin-left:40%;
+	height:33%;
+	width:27%;
+	z-index:-3;
+}
+#warrior {
+	position:absolute;
+	margin-top:0.4%;
+	margin-left:40.5%;
+	height:28%;
+	width:4%;
+	z-index:2;
+}
+#navbar_text {
+	position:relative;
+	font-size:1.5em;
+	width:20%;
+	margin-top:-10.8%;
+	margin-left:45%;
+	margin-bottom:10%;
+	z-index:4;
+	color:white;
+}
+#red {
+	z-index:-4;
+	position:relative;
+	margin-top:-1.3em;
+	height:60%;
+	width:100%;
+	background-color:#A00000;
+}
+#mainwarrior {
+	position:absolute;
+	margin-left:19em;
+	margin-top:0.5em;
+	width:12%;
+	height:90%;
+	z-index:8;
+}
+#likebutton {
+	margin-top:-9.1%;
+	position:absolute;
+	margin-left:45%;
+	z-index:4;
+}
+#sharebutton {
+	margin-top:-9.1%;
+	position:absolute;
+	margin-left:51.4%;
+	z-index:4;
+}
+#banner {
+	display:inline-block;
+	width:100%;
+	margin-left:0%;
+	z-index:-2;
+	margin-top:-0.8em;
+	height:30em;
+}
+#bannertext1 {
+	font-size:150%;
+	margin-top:-10em;
+	margin-left:15.7em;
+	width:50%;
+	color:white;
+}
+#bannertext2 {
+	font-size:150%;
+	margin-left:12em;
+	color:white;
+}
+#verticalbanner {
+	list-style-type: none;
+    margin-top:11.7em;
+    padding: 0;
+    width: 100%;
+    height:24em;
+    background-color:black;
+}
+#listitems:nth-child(1) {
+	margin-top:1em;
+}
+#listitems {
+	position:relative;
+	font-size: 36px;
+	width:100%;
+	margin-left:0.5em;
+	display: block;
+    color: white;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+    float:left;
+}
+#choose {
+	font-size:2em;
+	margin-top:1em;
+	margin-left:0.5em;
+	color:white;
+}
+#ryan {
+	display:block;
+	height:20em;
+	width:20em;
+	margin-top:3em;
+	margin-left:1.5em;
+	margin-bottom:5em;
+}
+#homebus_sec {
+	font-size:2em;
+	margin-top:-12.5em;
+	margin-left:12em;
+	color:white;
+	font-family: "Courier New", Courier, monospace;
+}
+#para1 {
+	margin-top:1em;
+	font-size:1.5em;
+	margin-left:16em;
+	color:white;
+	font-family: "Courier New", Courier, monospace;
+}
+#para2 {
+	margin-top:1em;
+	font-size:1.5em;
+	margin-left:16em;
+	margin-bottom:1.5em;
+	color:white;
+	font-family: "Courier New", Courier, monospace;
+}
+#about {
+	display:inline-block;
+	font-size:2.5em;
+	margin-left:4.3%;
+	margin-top:5%;
+}
+#what {
+	margin-top:-4.2%;
+	margin-left:60%;
+	font-size:2.5em;
+}
+#whatdiv {
+	position:relative;
+	margin-top:1.2%;
+}
+#whatdiv:after {
+ 	margin-left:50%;
+	content: '';
+	width: 0;
+	height: 1200%;
+	position: absolute;
+	border: 0.1px solid black;
+	top: 0;
+	left: 0em;
+}
+#aboutdiv {
+	position:relative;
+	margin-top:-2%;
+}
+#aboutpara {
+	position:absolute;
+	margin-top:1%;
+	margin-left:4.4%;
+	width:34%;
+	font-size:20px;
+	color:#700000;
+}
+#whatbullets {
+	position:absolute;
+	list-style-type:none;
+	font-size:1.5em;
+	margin-top:1%;
+	width:15em;
+	margin-left:61%;
+}
+#aboutpara:after {
+ 	margin-top:80em;
+ 	margin-left:60%;
+	content: '';
+	width: 0;
+	height: 50%;
+	position: absolute;
+	border: 0.1px solid black;
+	top: 0;
+	left: 0em;
+}
+#googleMap {
+	margin-top:5%;
+	margin-left:5%;
+    width: 25em;
+    height: 20em;
+    margin-bottom:-5000%;
+}
+#red2 {
+	position:relative;
+	margin-top:-1.3em;
+	padding-top:2em;
+	height:20%;
+	padding-bottom:4%;
+	background-color:#A00000;
+}
+</style>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1106065126117851";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<body>
+<nav id="wholebar" class="navbar navbar-default">
+  	<div id="navbar" class="container-fluid">
+	    <ul id="list" class="nav navbar-nav">
+	      	<li class="active"><a href="index.html">Home</a></li>
+	      	<li><a href="services.html">Services</a></li>
+	      	<li><a href="contact.html">Contact Us</a></li> 
+	    </ul>
+  	</div>
+</nav>
+<div id="red">
+	<img id="mainwarrior" src="warriorsecurity.png" class="image-responsive">
+	<img id="warrior" src="warrior.jpg" class="image-responsive">
+	<img id="contact_card" src="ryanandfriend.jpg" class="img-responsive">
+</div>
+<div id="likebutton" class="fb-like" data-href="https://www.facebook.com/warrior209/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+<div id="sharebutton" class="fb-share-button" data-href="https://www.facebook.com/warrior209/" data-layout="button" data-mobile-iframe="true"></div>
+<p id="navbar_text">Warrior Private Security</p>
+<div>
+	<img id="banner" src="securitybanner2.jpg">
+  	<h4 id="bannertext1" class="image-responsive">WARRIOR PRIVATE SECURITY</h4>
+	<h4 id="bannertext2" class="image-responsive">THE PROFESSIONAL APPROACH TO SECURITY</h4>
+	<ul id="verticalbanner" class="list-group">
+  		<li id="listitems" class="list-group item">TOTAL PROTECTION <p id="inner"> Your assets are important, so make sure they are protected.</p></li>
+  		<li id="listitems" class="list-group item">TOTAL SECURITY <p id="inner"> Integrate your security solution with the latest technologies.</p></li>
+  		<li id="listitems" class="list-group item">TOTAL PIECE OF MIND <p id="inner"> When you know you're safe and secure, you can rest easily.</p></li>
+	</ul>
+	<div id="red2">
+		<h2 id="choose">Why Choose Us?</h2>
+		<img id="ryan" src="ryan.jpg">
+		<h2 id="homebus_sec">HOME & BUSINESS SECURITY CENTER</h2>
+		<p id="para1">Protecting your home is a basic human instinct - you've worked hard for what you have. Why would you jeopardize that? At Warrior Private Security, we're dedicated to providing you true security and peace of mind. When you know you're safe and secure, you can rest easily.</p>
+		<p id="para2">With 10 years combined experience as a security guard/police explorer, you can trust us to protect your events, family, and business. We set ourselves apart with unwavering integrity and a strict code of ethics.</p>
+	</div>
+		<div id="aboutdiv">
+			<h3 id="about">ABOUT US</h3>
+			<p id="aboutpara">We've been where you are. We know you need a security contractor who you can trust.</p>
+		</div>
+		<div id="whatdiv">
+			<h3 id="what">WHAT WE DO?</h3>
+			<ul id="whatbullets">
+				<li id="innerwhatbullets">Event Security</li>
+				<li id="innerwhatbullets">Construction Site Security</li>
+				<li id="innerwhatbullets">Bike Patrol Security</li>
+				<li id="innerwhatbullets">Shopping Center Security</li>
+			</ul>
+		</div>
+	<div id="googleMap"></div>
+</div>
+</body>
+</html>
